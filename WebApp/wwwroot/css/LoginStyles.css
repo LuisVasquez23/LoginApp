@@ -1,0 +1,13 @@
+﻿.login-page {
+    background-size: 100%;
+    background-image: url('../img/app-bg.png');
+}
+
+.login-logo a, .register-logo > a {
+    color: white !important;
+    font-size: 3rem;
+}
+
+.login-card-body {
+    border-radius: 15px;
+}

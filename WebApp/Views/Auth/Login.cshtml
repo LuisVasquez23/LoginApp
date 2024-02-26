@@ -1,0 +1,79 @@
+﻿@model LoginViewModel;
+
+@{
+    Layout = "_LayoutLogin";
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href=""><b>Sign</b> in</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+
+            @if (ViewData.Keys.Contains("mensaje"))
+            {
+                <span class="text-danger">@ViewData["mensaje"]</span>
+            }
+
+            <form action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="input-group mb-3">
+                    <input asp-for="Email" type="email" class="form-control" autocomplete="off" placeholder="Email">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger w-100"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <input asp-for="Password" type="password" class="form-control" autocomplete="off" placeholder="Password">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger w-100"></span>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <input asp-for="RememberMe" type="checkbox" name="RememberMe">
+                        <label asp-for="RememberMe">
+                            Remember Me
+                        </label>
+                        <span asp-validation-for="RememberMe" class="text-danger w-100"></span>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+
+            <div class="social-auth-links text-center mb-3">
+                <a asp-action="Register" asp-controller="Auth" class="btn btn-block btn-link">
+                    Create an account
+                </a>
+                <p>- OR -</p>
+                <a asp-action="LoginExterno" asp-controller="Auth" asp-route-proveedor="Google" class="btn btn-block btn-danger">
+                    <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                </a>
+            </div>
+            <!-- /.social-auth-links -->
+
+            @* <p class="mb-1">
+                <a href="forgot-password.html">I forgot my password</a>
+            </p> *@
+        </div>
+        <!-- /.login-card-body -->
+    </div>
+</div>
+<!-- /.login-box -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
