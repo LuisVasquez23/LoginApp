@@ -148,3 +148,4 @@ C:\Users\luis\Desktop\LoginApp\WebApp\obj\Debug\net8.0\refint\WebApp.dll
 C:\Users\luis\Desktop\LoginApp\WebApp\obj\Debug\net8.0\WebApp.pdb
 C:\Users\luis\Desktop\LoginApp\WebApp\obj\Debug\net8.0\WebApp.genruntimeconfig.cache
 C:\Users\luis\Desktop\LoginApp\WebApp\obj\Debug\net8.0\ref\WebApp.dll
+C:\Users\luis\Desktop\LoginApp\WebApp\obj\Debug\net8.0\WebApp.sourcelink.json

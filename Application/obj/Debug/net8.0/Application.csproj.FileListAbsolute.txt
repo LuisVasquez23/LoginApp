@@ -13,3 +13,4 @@ C:\Users\luis\Desktop\LoginApp\Application\obj\Debug\net8.0\Application.dll
 C:\Users\luis\Desktop\LoginApp\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\luis\Desktop\LoginApp\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\luis\Desktop\LoginApp\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\luis\Desktop\LoginApp\Application\obj\Debug\net8.0\Application.sourcelink.json

@@ -17,3 +17,4 @@ C:\Users\luis\Desktop\LoginApp\Persistence\obj\Debug\net8.0\refint\Persistence.d
 C:\Users\luis\Desktop\LoginApp\Persistence\obj\Debug\net8.0\Persistence.pdb
 C:\Users\luis\Desktop\LoginApp\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
 C:\Users\luis\Desktop\LoginApp\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+C:\Users\luis\Desktop\LoginApp\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json

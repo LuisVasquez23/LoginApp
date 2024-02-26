@@ -38,11 +38,7 @@ namespace Application.Services.User
 
             var result = await _userManager.CreateAsync(user, password: model.Password);
 
-            if (result.Succeeded)
-            {
-                return new AuthServiceViewModel { user = user , errores = null };
-            }
-            else
+            if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
                 {
@@ -50,9 +46,12 @@ namespace Application.Services.User
                 }
 
                 return new AuthServiceViewModel { user = user, errores = errores };
+                
             }
 
-           
+            return new AuthServiceViewModel { user = user, errores = null };
+
+
         }
 
         public async Task<IdentityResult> RegisterUser(UserModel model)
